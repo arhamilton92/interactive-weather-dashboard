@@ -1,0 +1,46 @@
+
+        .title {
+            font-size: 40px;
+        }
+        
+        .forecast {
+            background-color: dodgerblue;
+            border-radius: 5px;
+            color: white;
+            text-align: left;
+        }
+
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .row > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .whitesmoke {
+            background-color: whitesmoke;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .textleft {
+        text-align: left;
+        }
+
+        .weatherbox {
+            border-radius: 5px;
+        }
+
+        @media (min-width: 1450px) {
+        .container { max-width: 1400px;}
+        .container { max-width: 1400px;}
+        }

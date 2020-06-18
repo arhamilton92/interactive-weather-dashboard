@@ -7,6 +7,8 @@
             border-radius: 5px;
             color: white;
             text-align: left;
+            padding: 10px;
+            margin: 3px;
         }
         .row {
         display: flex;
@@ -32,13 +34,25 @@
         .weatherbox {
             border-radius: 5px;
         }
-        @media (min-width: 1300px) {
-        .weatherbox { min-width: 900px};
+
+        .UV-safe {
+            background-color: yellow;
+            padding: 4px;
+            border-radius: 3px;
         }
+        
+        .UV-warning {
+            background-color: orange;
+            padding: 4px;
+            border-radius: 3px;
+        }        
+        
+        .UV-danger {
+            background-color: red;
+            padding: 4px;
+            border-radius: 3px;
+        }
+
         @media (min-width: 1300px) {
             .city-button { min-width: 250px};
-
-        }
-        @media (max-width: 1299px) {
-            .city-button { min-width: 100px};
         }

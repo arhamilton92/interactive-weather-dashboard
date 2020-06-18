@@ -19,6 +19,7 @@
     rel="stylesheet"
 />
 <link rel="stylesheet" href="assets/style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Weather Dashboard</title>
 </head>
 
@@ -35,23 +36,24 @@
                 <form action="">
                     <div class="input-group mb-4 border white rounded-pill p-1">
                         <div class="input-group-prepend border-0">
-                            <button id="button-addon4" type="button" class="btn btn-link text-info"><i class="fa fa-search"></i></button>
+                            <button id="button-addon4" type="button" class="btn btn-link text-info search-button"><i class="fa fa-search"></i></button>
                         </div>
-                        <input type="search" placeholder="Search" aria-describedby="button-addon4" class="form-control bg-none border-0 mr-1">
+                        <input type="search" placeholder="Search" aria-describedby="button-addon4" class="form-control bg-none border-0 mr-1 citysearch">
                     </div>
                 </form>
-                <button id="button" type="button" class="btn btn-link white border pt-3 pb-3 textleft">Atlanta</button>
-                <button id="button" type="button" class="btn btn-link white border pt-3 pb-3 textleft">Atlanta</button>
+                <div class="city-button-list">
+                <!--previous search buttons go here-->
+                <!-- <button type="button" class="btn btn-link white border city-button">Atlanta</button>-->
+                <button type="button" class="btn btn-link white border city-button">Atlanta</button>
+                </div>
             </div>
-            <div class="col-8 text-center mt-5 mb-3">
+            <div class="col-8 textleft mt-5 mb-3">
                 <div class="row border white weatherbox">
-                    <div class="col mb-5 mt-4">
-                        <h3 class="mb-3">Atlanta</h3>
-                        <p>Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo repellendus nam aliquam nostrum maxime, facilis minima dolore quo nesciunt cum assumenda totam eveniet perspiciatis harum iste officiis blanditiis placeat voluptatibus?</p>
+                    <div class="col-8 mb-1 mt-4 weather-info">
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col mt-4">
+                    <div class="col-8 mt-4">
                         <h4 class="textleft">5 Day Forecast:</h4>
                     </div>
                 </div>
@@ -68,7 +70,7 @@
     </div>
     
     <!--script sources-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>

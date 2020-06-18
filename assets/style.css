@@ -53,6 +53,15 @@
             border-radius: 3px;
         }
 
-        @media (min-width: 1300px) {
+        @media (min-width: 1100px) {
             .city-button { min-width: 250px};
+        }
+
+        
+        @media (max-width: 1099px) {
+            .city-button { min-width: 150px};
+        }
+
+        @media (max-width: 700px) {
+            .city-button { min-width: 100px};
         }

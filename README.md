@@ -18,6 +18,7 @@ Enter your desired city in the search bar to find its weather data!
 
 ## Screenshots
 
-![image](![image](https://user-images.githubusercontent.com/64741393/84982338-7dfdec00-b104-11ea-86a6-8ee17b4e9270.png)
-)
+![image](https://user-images.githubusercontent.com/64741393/85136835-395e7780-b20e-11ea-925e-c9a1d6d8407d.png)
+
+
 

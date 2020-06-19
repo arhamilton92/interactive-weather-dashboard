@@ -132,13 +132,7 @@ function fromLocalStorage() {
     }
 }
 
-//FUNCTION CALLS
-fromLocalStorage();
-selectedCity = "Atlanta";
-searchCity();
-
-//search button event listener
-$(".search-button").on("click", function() {
+function submit() {
     selectedCity = $(".citysearch").val();
     if (selectedCity !== "") {
         searchCity();
@@ -150,4 +144,20 @@ $(".search-button").on("click", function() {
         fromLocalStorage();
     } 
     console.log(arrayOfCities);
+}
+
+//FUNCTION CALLS
+fromLocalStorage();
+selectedCity = "Atlanta";
+searchCity();
+
+
+//search button event listener
+$("#submit").on("submit", function() {
+    event.preventDefault();
+    submit();
 });
+
+// $(".search-button").on("click", function() {
+//     submit();
+// });

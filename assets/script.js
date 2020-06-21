@@ -111,6 +111,7 @@ function toLocalStorage() {
     localStorage.setItem(numberKey, numberOfCities)
     }
 
+
 //retrieves info from local storage to generate buttons.
 function fromLocalStorage() {
     //retrieves the number of buttons needed from local Storage.
@@ -147,6 +148,7 @@ function submit() {
 }
 
 //FUNCTION CALLS
+
 fromLocalStorage();
 selectedCity = "Atlanta";
 searchCity();
